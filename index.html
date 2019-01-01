@@ -49,6 +49,33 @@
       color: blueviolet;
     }
 
+    .tooltip {
+      position: relative;
+      display: inline-block;
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 250px;
+      background-color: lightsalmon;
+      color: black;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      font-size: 15px;
+      font-weight: normal;
+      font-family: 'Courier New', Courier, monospace;
+
+      /* Position the tooltip */
+      position: absolute;
+      z-index: 1;
+      margin-left: -125px;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+
     a:hover {
       font-size: 40px;
     }
@@ -61,11 +88,16 @@
 
 <body background="/html-arnabghs/images/greenBackground.jpg">
   <h1 id="page_heading">
-    <img src="/html-arnabghs/images/narutoSmallHeadingImg.png" alt="narutoSmallHead" height="100">
-    <a style="color:black" href="https://www3.narutoget.ru/category/naruto-subbed/">NinjaVerse</a>
-    <img src="/html-arnabghs/images/sasukeSmallHeadingImg.png" alt="sasukeSmallHead" height="100">
+    <div class="tooltip">
+      <a style="color:black" href="https://www3.narutoget.ru/category/naruto-subbed/">
+        <img src="/html-arnabghs/images/narutoSmallHeadingImg.png" alt="narutoSmallHead" height="100">
+        NinjaVerse
+        <img src="/html-arnabghs/images/sasukeSmallHeadingImg.png" alt="sasukeSmallHead" height="100">
+      </a>
+      <span class="tooltiptext">Click here to watch all episodes of Naruto :)</span>
+    </div>
   </h1>
-  <p style="text-align: center">(Click to watch all episodes of Naruto)</p>
+  <!-- <p style="text-align: center">(Click to watch all episodes of Naruto)</p> -->
   <div>
     <div style="width: 650px; float : left; margin-top:-40px">
       <ol class="heading">
@@ -84,7 +116,7 @@
             </li>
           </ul>
           <a href="http://naruto.wikia.com/wiki/Nine-Tails_Chakra_Mode">
-            <img src="/html-arnabghs/images/naru9tailsmode1.png" alt="naruto1" height=300px>
+            <img src="/html-arnabghs/images/naru9tailsmode1.png" title="naruto1" height=300px>
           </a>
           <a href="http://naruto.wikia.com/wiki/Senjutsu">
             <img src="/html-arnabghs/images/narutoSageMode.jpg" alt="naruto2" height=300px>
