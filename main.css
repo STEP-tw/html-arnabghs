@@ -1,0 +1,83 @@
+table, th, td {
+  border: 1px solid black;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.topic_heading {
+  clear: both;
+  text-decoration: underline;
+  text-align: center;
+  font-size: 30px;
+}
+
+.descriptions {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: justify;
+}
+
+.heading {
+  font-family: sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  text-decoration-color: black;
+}
+
+.bullet_lists {
+  font-family: sans-serif;
+  font-size: 20px;
+  text-align: justify;
+  font-weight: normal;
+}
+
+.table_row_heading {
+  font-size: 25px;
+  text-align: center;
+  font-family: fantasy;
+}
+
+#page_heading {
+  text-align: center;
+  text-decoration: underline;
+}
+
+a {
+  color: blueviolet;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 250px;
+  background-color: lightsalmon;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  font-size: 15px;
+  font-weight: normal;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  ;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  margin-left: -125px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+a:hover {
+  font-size: 40px;
+}
+
+img:hover {
+  transform: scale(1.5);
+}
