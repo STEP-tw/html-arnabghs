@@ -1,7 +1,7 @@
 table, th, td {
   border: 1px solid black;
   border-radius: 5px;
-  width: 100%;
+  /* width: 100%; */
 }
 
 .fig_captions {
@@ -50,7 +50,7 @@ table, th, td {
   text-decoration: underline;
   font-size: 50px;
   font-family: fantasy;
-  margin-bottom: 0px;
+  margin-bottom: 25px;
   width: 900px;
 }
 
